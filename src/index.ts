@@ -1,4 +1,4 @@
-import { romanNumeralToNumberMap } from "./utils/constants";
+import { numberToRomanNumeralMap, romanNumeralToNumberMap } from "./utils/constants";
 
 /**
  * Converts the `romanNumeral` to the equivalent number.
@@ -33,4 +33,38 @@ export function romanNumeralToNumber(romanNumeral: string): number {
     }
 
     return number;
+}
+
+/**
+ * Converts the `number` to the equivalent `romanNumeral`.
+ */
+export function numberToRomanNumeral(number: number): string {
+    let romanNumeral = '';
+
+    const currentRomanNumeral = numberToRomanNumeralMap[number];
+
+    if (currentRomanNumeral) {
+        romanNumeral += currentRomanNumeral;
+        return romanNumeral;
+    }
+
+    // Find where the `number` fits in the map
+    const mappedNumbers = Object.keys(numberToRomanNumeralMap).map(n => parseInt(n));
+    let baseNumber: number = 1;
+
+    for (let index = 1; index < mappedNumbers.length; index++) {
+        const mappedNumber = mappedNumbers[index];
+        
+        if (number < mappedNumber) {
+            break;
+        }
+
+        baseNumber = mappedNumber;
+    }
+
+    romanNumeral = numberToRomanNumeral(baseNumber);
+
+    const rest = number - baseNumber;
+
+    return romanNumeral + numberToRomanNumeral(rest);
 }
