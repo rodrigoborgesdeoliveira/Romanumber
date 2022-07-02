@@ -1,4 +1,6 @@
 import { numberToRomanNumeralMap, romanNumeralToNumberMap } from "./utils/constants";
+import { InvalidNumber } from "./utils/errors";
+import { isNumberValid } from "./utils/validators";
 
 /**
  * Converts the `romanNumeral` to the equivalent number.
@@ -39,6 +41,10 @@ export function romanNumeralToNumber(romanNumeral: string): number {
  * Converts the `number` to the equivalent `romanNumeral`.
  */
 export function numberToRomanNumeral(number: number): string {
+    if (!isNumberValid(number)) {
+        throw new InvalidNumber();
+    }
+
     let romanNumeral = '';
 
     const currentRomanNumeral = numberToRomanNumeralMap[number];
