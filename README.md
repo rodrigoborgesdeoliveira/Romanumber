@@ -15,4 +15,3 @@ numberToRomanNumeral(7)
 
 ### Known limitations
 - Only numbers between 1 and 3999 are supported.
-- Invalid roman numerals, e.g. IIII or VXDL, are not validated.
