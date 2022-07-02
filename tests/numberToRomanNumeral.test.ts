@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import { numberToRomanNumeral } from "../src/index";
+import { InvalidNumber } from "../src/utils/errors";
 import { isNumberValid } from "../src/utils/validators";
 
 describe('Convert from numbers to roman numerals', () => {
@@ -37,6 +38,10 @@ describe('Convert from numbers to roman numerals', () => {
 
     it('should return MMMCDXCI for the number 3491', () => {
         expectNumberEqualToRomanNumeral(3491, 'MMMCDXCI');
+    });
+
+    it('should throw an error if the number is invalid', () => {
+        expect(() => numberToRomanNumeral(-1)).to.throw(InvalidNumber);
     });
 });
 
