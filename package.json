@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Convert from Roman Numerals to Numbers and vice-versa.",
   "main": "dist/index.js",
+  "files": ["dist"],
   "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
     "test": "mocha -r ts-node/register 'tests/**/*.ts'"
   },
   "repository": {
