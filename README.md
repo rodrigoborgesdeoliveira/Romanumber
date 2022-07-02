@@ -1,3 +1,5 @@
+[![Tests](https://github.com/rodrigoborgesdeoliveira/Romanumber/actions/workflows/run-tests.yml/badge.svg)](https://github.com/rodrigoborgesdeoliveira/Romanumber/actions/workflows/run-tests.yml)
+
 Convert from Roman Numerals to Numbers and vice-versa.
 
 ### Usage
