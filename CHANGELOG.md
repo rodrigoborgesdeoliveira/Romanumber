@@ -5,9 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Addded
-- Function to validate the number input. (#4)
-- Function to validate the roman numeral input. (#3)
+### Added
+- Validate the number input. (#4)
+- Validate the roman numeral input. (#3)
 
 ## [1.0.0] - 2022-07-01
 ### Added

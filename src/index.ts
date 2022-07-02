@@ -1,11 +1,15 @@
 import { numberToRomanNumeralMap, romanNumeralToNumberMap } from "./utils/constants";
-import { InvalidNumber } from "./utils/errors";
-import { isNumberValid } from "./utils/validators";
+import { InvalidNumber, InvalidRomanNumeral } from "./utils/errors";
+import { isNumberValid, isRomanNumeralValid } from "./utils/validators";
 
 /**
  * Converts the `romanNumeral` to the equivalent number.
  */
 export function romanNumeralToNumber(romanNumeral: string): number {
+    if (!isRomanNumeralValid(romanNumeral)) {
+        throw new InvalidRomanNumeral();
+    }
+
     let number = romanNumeralToNumberMap[romanNumeral];
 
     if (!number) {
