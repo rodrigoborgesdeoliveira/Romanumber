@@ -1,6 +1,6 @@
 # This worflow will run all unit tests
 
-name: Run tests
+name: Tests
 
 on:
   pull_request:
