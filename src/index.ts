@@ -50,7 +50,7 @@ export function numberToRomanNumeral(number: number): string {
 
     // Find where the `number` fits in the map
     const mappedNumbers = Object.keys(numberToRomanNumeralMap).map(n => parseInt(n));
-    let baseNumber: number = 1;
+    let baseNumber = 1;
 
     for (let index = 1; index < mappedNumbers.length; index++) {
         const mappedNumber = mappedNumbers[index];
