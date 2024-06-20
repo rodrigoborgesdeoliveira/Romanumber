@@ -23,7 +23,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Function to convert from roman numeral to number. (#1)
 - Function to convert from number to roman numeral. (#2)
 
-[Unreleased]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/main...v1.1.1
+[Unreleased]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/main...v1.1.2
+[1.1.2]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/rodrigoborgesdeoliveira/Romanumber/releases/tag/v1.0.0
