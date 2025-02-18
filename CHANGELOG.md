@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.3] - 2025-02-18
+### Security
+- Update serialize-javascript to fix [Cross-site Scripting (XSS)](https://github.com/rodrigoborgesdeoliveira/Romanumber/security/dependabot/8).
+- Update nanoid to fix [Predictable results in nanoid generation when given non-integer values](https://github.com/rodrigoborgesdeoliveira/Romanumber/security/dependabot/7).
+
 ## [1.1.2] - 2024-06-20
 ### Security
 - Update braces to fix [uncontrolled resource consumption](https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727).
@@ -23,7 +28,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Function to convert from roman numeral to number. (#1)
 - Function to convert from number to roman numeral. (#2)
 
-[Unreleased]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/main...v1.1.2
+[Unreleased]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/main...v1.1.3
+[1.1.3]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.0.0...v1.1.0
