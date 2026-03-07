@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/rodrigoborgesdeoliveira/Romanumber#readme",
   "engines": {
-    "node": ">=24 <25"
+    "node": ">=20"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
