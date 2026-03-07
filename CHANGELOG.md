@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2026-03-07
+### Changed
+- **BREAKING:** Minimum supported Node.js version is now `20` (`"node": ">=20"`).
+
+### Security
+- Bump `js-yaml` from `4.1.0` to `4.1.1`. (#21)
+- Bump `minimatch` from `3.1.2` to `3.1.5`. (#22)
+- Bump `serialize-javascript` to address CVE-2020-7660. (#23)
+
 ## [1.1.3] - 2025-02-18
 ### Security
 - Update serialize-javascript to fix [Cross-site Scripting (XSS)](https://github.com/rodrigoborgesdeoliveira/Romanumber/security/dependabot/8).
@@ -28,7 +37,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Function to convert from roman numeral to number. (#1)
 - Function to convert from number to roman numeral. (#2)
 
-[Unreleased]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/main...v1.1.3
+[Unreleased]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/main...v2.0.0
+[2.0.0]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.1.3...v2.0.0
 [1.1.3]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/rodrigoborgesdeoliveira/Romanumber/compare/v1.1.0...v1.1.1
