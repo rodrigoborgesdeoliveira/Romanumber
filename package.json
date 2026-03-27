@@ -1,6 +1,6 @@
 {
   "name": "romanumber",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Convert from Roman Numerals to Numbers and vice-versa.",
   "main": "dist/index.js",
   "files": [
